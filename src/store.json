@@ -1,0 +1,145 @@
+[
+  {
+    "id": 1,
+    "entity": "soccer_player",
+    "threshold": 50,
+    "title_list": [
+      "player_1,delete_team,soccer_team_2",
+      "player_1,add_team,soccer_team_1",
+      "soccer_team_1,add_player,player_1",
+      "soccer_team_2,delete_player,player_1"
+    ],
+    "example_list": [
+      "Neymar, delete_team,Barcelone",
+      "Barcelona, delete_player,Neymar",
+      "Neymar, add_team,PSG",
+      "PSG, add_player,Neymar"
+    ],
+    "link_err1": "https://en.wikipedia.org/wiki/Nikola_Mitrovi%C4%87",
+    "link_err2": "https://en.wikipedia.org/wiki/Zalaegerszegi_TE",
+    "link_err3": "https://en.wikipedia.org/wiki/Ke%C5%9Fla_FK",
+    "link_example1": "https://en.wikipedia.org/wiki/Neymar",
+    "link_example2": "https://en.wikipedia.org/wiki/Paris_Saint-Germain_F.C.",
+    "link_example3": "https://en.wikipedia.org/wiki/FC_Barcelona",
+    "example_links": [
+      "https://en.wikipedia.org/wiki/Neymar",
+      "https://en.wikipedia.org/wiki/Paris_Saint-Germain_F.C."
+    ],
+    "window_size": "1-week",
+    "time": "1-st week July",
+    "err_list": [
+      "ZTE,add_player,Nikola Mitrović",
+      "Keşla FK,delete_player,Nikola Mitrović"
+    ],
+    "err_list_missing": [
+      "Nikola Mitrović,add_team,ZTE",
+      "Nikola Mitrović,delete_team,Keşla FK"
+    ]
+  },
+  {
+    "id": 2,
+    "entity": "soccer_player",
+    "threshold": 65,
+    "title": "{player_1,delete_team,soccer_team_2}\n{player_1,add_team,soccer_team_1}\n{soccer_team_1,add_player,player_1}\n{soccer_team_2,delete_player,player_1}\n",
+    "example": "{Neymar, delete_team,Barcelone}\n{Barcelona, delete_player,Neymar}\n{Neymar, add_team,PSG}\n{PSG, add_player,Neymar}",
+    "window_size": "2-week",
+    "time": "1st-2nd- week July",
+    "title_list": [
+      "player_1,delete_team,soccer_team_2",
+      "player_1,add_team,soccer_team_1",
+      "soccer_team_1,add_player,player_1",
+      "soccer_team_2,delete_player,player_1"
+    ],
+    "example_list": [
+      "Neymar, delete_team,Barcelone",
+      "Barcelona, delete_player,Neymar",
+      "Neymar, add_team,PSG",
+      "PSG, add_player,Neymar"
+    ],
+    "link_err1": "https://en.wikipedia.org/wiki/Nikola_Mitrovi%C4%87",
+    "link_err2": "https://en.wikipedia.org/wiki/Zalaegerszegi_TE",
+    "link_err3": "https://en.wikipedia.org/wiki/Ke%C5%9Fla_FK",
+    "link_example1": "https://en.wikipedia.org/wiki/Neymar",
+    "example_links": [
+      "https://en.wikipedia.org/wiki/Neymar",
+      "https://en.wikipedia.org/wiki/Paris_Saint-Germain_F.C."
+    ],
+    "err_list": [
+      "ZTE,add_player,Nikola Mitrović",
+      "Keşla FK,delete_player,Nikola Mitrović"
+    ],
+    "err_list_missing": [
+      "Nikola Mitrović,add_team,ZTE",
+      "Nikola Mitrović,delete_team,Keşla FK"
+    ]
+  },
+  {
+    "id": 3,
+    "entity": "soccer_player",
+    "threshold": 10,
+    "window_size": "1-week",
+    "time": "1-st week July",
+    "link_example1": "https://en.wikipedia.org/wiki/Neymar",
+    "link_err1": "https://en.wikipedia.org/wiki/Nikola_Mitrovi%C4%87",
+    "link_err2": "https://en.wikipedia.org/wiki/Zalaegerszegi_TE",
+    "link_err3": "https://en.wikipedia.org/wiki/Ke%C5%9Fla_FK",
+    "title_list": [
+      "player_1,delete_team,soccer_team_2",
+      "player_1,add_team,soccer_team_1",
+      "soccer_team_1,add_player,player_1",
+      "soccer_team_2,delete_player,player_1",
+      "player_1,add_league,league_1",
+      "player_1,delete_league,league_2"
+    ],
+    "example_list": [
+      "Neymar, delete_team,Barcelone",
+      "Barcelona, delete_player,Neymar",
+      "Neymar, add_team,PSG",
+      "PSG, add_player,Neymar"
+    ],
+    "link_example2": "https://en.wikipedia.org/wiki/Paris_Saint-Germain_F.C.",
+    "link_example3": "https://en.wikipedia.org/wiki/FC_Barcelona",
+    "example_links": [
+      "https://en.wikipedia.org/wiki/Neymar",
+      "https://en.wikipedia.org/wiki/Paris_Saint-Germain_F.C."
+    ],
+    "err_list": [
+      "ZTE,add_player,Nikola Mitrović",
+      "Keşla FK,delete_player,Nikola Mitrović"
+    ],
+    "err_list_missing": [
+      "Nikola Mitrović,add_team,ZTE",
+      "Nikola Mitrović,delete_team,Keşla FK"
+    ]
+  },
+  {
+    "id": 4,
+    "entity": "actor",
+    "threshold": 20,
+    "title_list": [
+      "actor_1,add_award,award_1",
+      "award_1,add_actor,actor_1"
+    ],
+    "example_list": [
+      "Gary Oldman, add_award, Academy Award for Best Actor",
+      "Academy Award for Best Actor, add_actor , Gary Oldman"
+    ],
+    "link_err1": "https://en.wikipedia.org/wiki/Nikola_Mitrovi%C4%87",
+    "link_err2": "https://en.wikipedia.org/wiki/Zalaegerszegi_TE",
+    "link_err3": "https://en.wikipedia.org/wiki/Ke%C5%9Fla_FK",
+    "link_example1": "https://en.wikipedia.org/wiki/Academy_Award_for_Best_Actor",
+    "link_example2": "https://en.wikipedia.org/wiki/Gary_Oldman",
+    "example_links": [
+      "https://en.wikipedia.org/wiki/Academy_Award_for_Best_Actor",
+      "https://en.wikipedia.org/wiki/Gary_Oldman"
+    ],
+    "window_size": "1-week",
+    "time": "4-th week February",
+    "err_list": [
+      "Denzel Washington,add_award,Academy_Award_for_Best_Actor"
+    ],
+    "err_list_missing": [
+      "Denzel Washington, add_actor, Academy_Award_for_Best_Actor"
+    ]
+  }
+]
